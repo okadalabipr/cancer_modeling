@@ -7,21 +7,21 @@ Hanahan, D. & Weinberg, R. A. The hallmarks of cancer. *Cell* **100**, 57–70 (
 
 ## Models
 - ERK & AKT signaling pathway
-    - [Kholodenko_et_al_1999](https://github.com/okadalabipr/sbmodels/tree/master/Kholodenko_et_al_1999)
-    - [Hatakeyama_et_al_2003](https://github.com/okadalabipr/Hatakeyama_et_al_2003)
-    - [Birtwistle_et_al_2007](https://github.com/okadalabipr/Birtwistle_et_al_2007)
+    - [Kholodenko1999](https://github.com/okadalabipr/sbmodels/tree/master/Kholodenko1999)
+    - [Hatakeyama2003](https://github.com/okadalabipr/Hatakeyama2003)
+    - [Birtwistle2007](https://github.com/okadalabipr/Birtwistle2007)
     
 - Immediate-early gene response
-    - [Nakakuki_et_al_2010](https://github.com/okadalabipr/Nakakuki_et_al_2010)
+    - [Nakakuki2010](https://github.com/okadalabipr/Nakakuki2010)
 
 - NF-κB pathway
-    - [Shinohara_et_al_2014](https://github.com/okadalabipr/Shinohara_et_al_2014)
-    - [Inoue_et_al_2016](https://github.com/okadalabipr/Inoue_et_al_2016)
-    - [Oppelt_et_al_2018](https://github.com/okadalabipr/sbmodels/tree/master/Oppelt_et_al_2018)
+    - [Shinohara2014](https://github.com/okadalabipr/Shinohara2014)
+    - [Inoue2016](https://github.com/okadalabipr/Inoue2016)
+    - [Oppelt2018](https://github.com/okadalabipr/sbmodels/tree/master/Oppelt2018)
 
 - Cell cycle
-    - [Barr_et_al_2016](https://github.com/okadalabipr/sbmodels/tree/master/Barr_et_al_2016)
-    - [Heldt_et_al_2018](https://github.com/okadalabipr/sbmodels/tree/master/Heldt_et_al_2018)
+    - [Barr2016](https://github.com/okadalabipr/sbmodels/tree/master/Barr2016)
+    - [Heldt2018](https://github.com/okadalabipr/sbmodels/tree/master/Heldt2018)
 
 - p38 MAPK pathway
-    - [Tomida_et_al_2015](https://github.com/okadalabipr/sbmodels/tree/master/Tomida_et_al_2015)
+    - [Tomida2015](https://github.com/okadalabipr/sbmodels/tree/master/Tomida2015)

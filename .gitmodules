@@ -4,3 +4,6 @@
 [submodule "Nakakuki2010"]
 	path = Nakakuki2010
 	url = https://github.com/okadalabipr/Nakakuki2010
+[submodule "Hatakeyama2003"]
+	path = Hatakeyama2003
+	url = https://github.com/okadalabipr/Hatakeyama2003

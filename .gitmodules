@@ -1,0 +1,6 @@
+[submodule "Birtwistle2007"]
+	path = Birtwistle2007
+	url = https://github.com/okadalabipr/Birtwistle2007
+[submodule "Nakakuki2010"]
+	path = Nakakuki2010
+	url = https://github.com/okadalabipr/Nakakuki2010

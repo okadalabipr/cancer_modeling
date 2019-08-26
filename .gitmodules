@@ -7,3 +7,9 @@
 [submodule "Hatakeyama2003"]
 	path = Hatakeyama2003
 	url = https://github.com/okadalabipr/Hatakeyama2003
+[submodule "Shinohara2014"]
+	path = Shinohara2014
+	url = https://github.com/okadalabipr/Shinohara2014
+[submodule "Inoue2016"]
+	path = Inoue2016
+	url = https://github.com/okadalabipr/Inoue2016

@@ -17,7 +17,7 @@ Hanahan, D. & Weinberg, R. A. The hallmarks of cancer. *Cell* **100**, 57–70 (
 - NF-κB pathway
     - [Shinohara2014](https://github.com/okadalabipr/Shinohara2014)
     - [Inoue2016](https://github.com/okadalabipr/Inoue2016)
-    - [Oppelt2018](https://github.com/okadalabipr/sbmodels/tree/master/Oppelt2018)
+    - [Oppelt2018](https://github.com/okadalabipr/Oppelt2018)
 
 - Cell cycle
     - [Barr2016](https://github.com/okadalabipr/sbmodels/tree/master/Barr2016)

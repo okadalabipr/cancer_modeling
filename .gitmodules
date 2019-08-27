@@ -13,3 +13,6 @@
 [submodule "Inoue2016"]
 	path = Inoue2016
 	url = https://github.com/okadalabipr/Inoue2016
+[submodule "Oppelt2018"]
+	path = Oppelt2018
+	url = https://github.com/okadalabipr/Oppelt2018

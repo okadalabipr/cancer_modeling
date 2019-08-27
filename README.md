@@ -7,7 +7,7 @@ Hanahan, D. & Weinberg, R. A. The hallmarks of cancer. *Cell* **100**, 57–70 (
 
 ## Models
 - ERK & AKT signaling pathway
-    - [Kholodenko1999](https://github.com/okadalabipr/sbmodels/tree/master/Kholodenko1999)
+    - [Kholodenko1999](https://github.com/okadalabipr/Kholodenko1999)
     - [Hatakeyama2003](https://github.com/okadalabipr/Hatakeyama2003)
     - [Birtwistle2007](https://github.com/okadalabipr/Birtwistle2007)
     

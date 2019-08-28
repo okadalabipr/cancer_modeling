@@ -19,3 +19,9 @@
 [submodule "Kholodenko1999"]
 	path = Kholodenko1999
 	url = https://github.com/okadalabipr/Kholodenko1999
+[submodule "Heldt2018"]
+	path = Heldt2018
+	url = https://github.com/okadalabipr/Heldt2018
+[submodule "Barr2016"]
+	path = Barr2016
+	url = https://github.com/okadalabipr/Barr2016

@@ -24,4 +24,4 @@ Hanahan, D. & Weinberg, R. A. The hallmarks of cancer. *Cell* **100**, 57–70 (
     - [Heldt2018](https://github.com/okadalabipr/Heldt2018)
 
 - p38 MAPK pathway
-    - [Tomida2015](https://github.com/okadalabipr/sbmodels/tree/master/Tomida2015)
+    - [Tomida2015](https://github.com/okadalabipr/Tomida2015)

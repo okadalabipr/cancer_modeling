@@ -25,3 +25,6 @@
 [submodule "Barr2016"]
 	path = Barr2016
 	url = https://github.com/okadalabipr/Barr2016
+[submodule "Tomida2015"]
+	path = Tomida2015
+	url = https://github.com/okadalabipr/Tomida2015

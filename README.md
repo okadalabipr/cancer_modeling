@@ -1,7 +1,7 @@
 # Computational modeling of signaling pathways in cancer
 The Emergent Integrated Circuit of the Cell
 
-![cancer_signaling](https://ars.els-cdn.com/content/image/1-s2.0-S0092867400816839-gr2_lrg.jpg)
+![integrated_cuicuit](integrated_circuit.png)
 
 Hanahan, D. & Weinberg, R. A. The hallmarks of cancer. *Cell* **100**, 57–70 (2000). https://doi.org/10.1016/S0092-8674(00)81683-9
 

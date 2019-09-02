@@ -25,3 +25,6 @@ Hanahan, D. & Weinberg, R. A. The hallmarks of cancer. *Cell* **100**, 57–70 (
 
 - p38 MAPK pathway
     - [Tomida2015](https://github.com/okadalabipr/Tomida2015)
+
+- DNA damage response pathway
+    - [Yang2018](https://github.com/okadalabipr/Yang2018)

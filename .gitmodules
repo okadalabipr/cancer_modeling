@@ -28,3 +28,6 @@
 [submodule "Tomida2015"]
 	path = Tomida2015
 	url = https://github.com/okadalabipr/Tomida2015
+[submodule "Yang2018"]
+	path = Yang2018
+	url = https://github.com/okadalabipr/Yang2018

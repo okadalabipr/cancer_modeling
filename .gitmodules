@@ -31,3 +31,6 @@
 [submodule "Yang2018"]
 	path = Yang2018
 	url = https://github.com/okadalabipr/Yang2018
+[submodule "Lipniacki2004"]
+	path = Lipniacki2004
+	url = https://github.com/okadalabipr/Lipniacki2004

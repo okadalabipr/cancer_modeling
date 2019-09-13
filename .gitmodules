@@ -34,3 +34,6 @@
 [submodule "Lipniacki2004"]
 	path = Lipniacki2004
 	url = https://github.com/okadalabipr/Lipniacki2004
+[submodule "Zi2011"]
+	path = Zi2011
+	url = https://github.com/okadalabipr/Zi2011

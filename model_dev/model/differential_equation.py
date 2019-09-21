@@ -1,6 +1,6 @@
 import numpy as np
-from .name2idx import f_parameter as C
-from .name2idx import f_variable as V
+from .name2idx import parameters as C
+from .name2idx import variables as V
 
 def diffeq(y,t,*x):
     dydt = [0]*V.len_f_vars

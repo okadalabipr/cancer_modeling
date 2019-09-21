@@ -1,4 +1,4 @@
-F_P = [\
+param_names = [\
     """
     This is where you define the parameter names of your model.
     """
@@ -6,5 +6,5 @@ F_P = [\
     'len_f_params'\
 ]
 
-for i,name in enumerate(F_P):
-    exec('%s=%d'%(name,i))
+for idx,name in enumerate(param_names):
+    exec('%s=%d'%(name,idx))

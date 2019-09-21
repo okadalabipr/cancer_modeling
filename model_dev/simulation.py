@@ -1,8 +1,8 @@
 import numpy as np
 from scipy.integrate import odeint
 
-from model.name2idx import f_parameter as C
-from model.name2idx import f_variable as V
+from model.name2idx import parameters as C
+from model.name2idx import variables as V
 from model.param_const import f_params
 from model.initial_condition import initial_values
 from model.differential_equation import diffeq

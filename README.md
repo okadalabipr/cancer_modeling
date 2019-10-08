@@ -27,6 +27,9 @@ Hanahan, D. & Weinberg, R. A. The hallmarks of cancer. *Cell* **100**, 57–70 (
  - TGF-β/Smad signaling pathway
     - [Zi2011](https://github.com/okadalabipr/Zi2011)
 
+- JAK/STAT signaling pathway
+    - [Raia2011](https://github.com/okadalabipr/Raia2011)
+
 - p38 MAPK pathway
     - [Tomida2015](https://github.com/okadalabipr/Tomida2015)
 

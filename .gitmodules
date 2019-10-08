@@ -37,3 +37,6 @@
 [submodule "Zi2011"]
 	path = Zi2011
 	url = https://github.com/okadalabipr/Zi2011
+[submodule "Raia2011"]
+	path = Raia2011
+	url = https://github.com/okadalabipr/Raia2011

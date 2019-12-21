@@ -8,6 +8,3 @@ from run_sim import run_simulation
 run_simulation()
 ```
 ![Per_Cry_Bmal1mRNA](Per_Cry_Bmal1mRNA.png)
-
-## License
-[MIT](/LICENSE)

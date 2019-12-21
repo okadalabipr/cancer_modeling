@@ -8,6 +8,3 @@ from run_sim import run_simulation
 run_simulation()
 ```
 ![p27_CycE_CycAlevel](p27_CycE_CycAlevel.png)
-
-## License
-[MIT](/LICENSE)

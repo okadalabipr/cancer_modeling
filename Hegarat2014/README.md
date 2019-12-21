@@ -8,6 +8,3 @@ from run_sim import run_simulation
 run_simulation()
 ```
 ![mitotic_switch](mitotic_switch.png)
-
-## License
-[MIT](/LICENSE)

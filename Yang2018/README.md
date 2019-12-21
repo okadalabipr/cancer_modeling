@@ -14,6 +14,3 @@ using .Yang2018
 runSim()
 ```
 ![p53_dynamics](p53_dynamics.png)
-
-## License
-[MIT](/LICENSE)

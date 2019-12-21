@@ -8,6 +8,3 @@ from run_sim import run_simulation
 run_simulation()
 ```
 ![EGFsignaling](EGFsignaling.png)
-
-## License
-[MIT](/LICENSE)

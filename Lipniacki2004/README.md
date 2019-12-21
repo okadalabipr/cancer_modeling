@@ -8,6 +8,3 @@ from run_sim import run_simulation
 run_simulation()
 ```
 ![wild_type](wild_type.png)
-
-## License
-[MIT](/LICENSE)

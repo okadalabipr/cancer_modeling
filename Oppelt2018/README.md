@@ -8,6 +8,3 @@ from run_sim import run_simulation
 run_simulation()
 ```
 ![nuclear_IkBa_NFkB](nuclear_IkBa_NFkB.png)
-
-## License
-[MIT](/LICENSE)

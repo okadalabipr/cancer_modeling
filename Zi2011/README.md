@@ -8,6 +8,3 @@ from run_sim import run_simulation
 run_simulation()
 ```
 ![PSmad2](PSmad2.png)
-
-## License
-[MIT](/LICENSE)

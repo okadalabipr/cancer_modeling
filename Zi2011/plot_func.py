@@ -18,4 +18,4 @@ def timecourse(sim):
     plt.ylim(-3000,35000)
     plt.legend(loc='best',frameon=False)
     
-    plt.show()
+    plt.savefig('./PSmad2.png',bbox_inches='tight')

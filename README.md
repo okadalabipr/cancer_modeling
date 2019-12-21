@@ -7,7 +7,7 @@ Hanahan, D. & Weinberg, R. A. The hallmarks of cancer. *Cell* **100**, 57–70 (
 
 ## Models
 - ERK & AKT signaling pathway
-    - [Kholodenko1999](https://github.com/okadalabipr/Kholodenko1999)
+    - [Kholodenko1999](./Kholodenko1999)
     - [Hatakeyama2003](https://github.com/okadalabipr/Hatakeyama2003)
     - [Birtwistle2007](https://github.com/okadalabipr/Birtwistle2007)
     
@@ -15,26 +15,27 @@ Hanahan, D. & Weinberg, R. A. The hallmarks of cancer. *Cell* **100**, 57–70 (
     - [Nakakuki2010](https://github.com/okadalabipr/Nakakuki2010)
 
 - NF-κB pathway
-    - [Lipniacki2004](https://github.com/okadalabipr/Lipniacki2004)
+    - [Lipniacki2004](./Lipniacki2004)
     - [Shinohara2014](https://github.com/okadalabipr/Shinohara2014)
     - [Inoue2016](https://github.com/okadalabipr/Inoue2016)
-    - [Oppelt2018](https://github.com/okadalabipr/Oppelt2018)
+    - [Oppelt2018](./Oppelt2018)
 
 - Cell cycle
-    - [Barr2016](https://github.com/okadalabipr/Barr2016)
-    - [Heldt2018](https://github.com/okadalabipr/Heldt2018)
+    - [Hegarat2014](./Hegarat2014)
+    - [Barr2016](./Barr2016)
+    - [Heldt2018](./Heldt2018)
 
  - TGF-β/Smad signaling pathway
-    - [Zi2011](https://github.com/okadalabipr/Zi2011)
+    - [Zi2011](./Zi2011)
 
 - JAK/STAT signaling pathway
-    - [Raia2011](https://github.com/okadalabipr/Raia2011)
+    - [Raia2011](./Raia2011)
 
 - p38 MAPK pathway
-    - [Tomida2015](https://github.com/okadalabipr/Tomida2015)
+    - [Tomida2015](./Tomida2015)
 
 - DNA damage response pathway
-    - [Yang2018](https://github.com/okadalabipr/Yang2018)
+    - [Yang2018](./Yang2018)
 
 ## License
 [MIT](LICENSE)

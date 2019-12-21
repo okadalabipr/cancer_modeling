@@ -28,4 +28,4 @@ def timecourse(sim):
     plt.text(12.4*60,0.6,'CycA level',ha='center',va='bottom',color='g')
     plt.text(12.4*60,0.35,'free\nCycA:Cdk2',ha='center',va='bottom',color='g')
 
-    plt.show()
+    plt.savefig('./p27_CycE_CycAlevel.png',bbox_inches='tight')

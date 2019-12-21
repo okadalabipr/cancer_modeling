@@ -29,6 +29,6 @@ function plotFunc_timecourse(Sim::Module)
     legend(loc="upper right",frameon=false);
     text(1,5.15,"MCF7")
     
-    show();
+    savefig("p53_dynamics.png",bbox_inches="tight");
 
 end

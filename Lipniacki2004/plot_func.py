@@ -90,4 +90,4 @@ def timecourse(sim):
     plt.xticks([0,2,4,6])
     plt.title(r'× 10$^4$ cgen mRNA')
     
-    plt.show()
+    plt.savefig('wild_type.png',bbox_inches='tight')

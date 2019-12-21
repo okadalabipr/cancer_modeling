@@ -22,4 +22,4 @@ def timecourse(sim):
     ax2.set_yticks([7,8,9,10])
     ax2.set_ylabel(r'$\it{Bmal1}$'+' mRNA '+r'$\sf{(M_B)}$'+', nM')
 
-    plt.show()
+    plt.savefig('Per_Cry_Bmal1mRNA.png',bbox_inches='tight')

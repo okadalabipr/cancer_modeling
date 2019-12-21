@@ -210,4 +210,4 @@ def timecourse(sim):
     plt.title('CD274mRNA')
     plt.xlabel('Time (min)')
     
-    plt.show()
+    plt.savefig('MedB1model.png',bbox_inches='tight')

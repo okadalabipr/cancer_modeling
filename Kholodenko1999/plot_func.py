@@ -58,5 +58,4 @@ def timecourse(sim):
     ax2.set_ylim(0,105)
     ax2.set_yticks([30*i for i in range(4)])
 
-    #plt.show()
     plt.savefig('EGFsignaling.png',bbox_inches='tight')

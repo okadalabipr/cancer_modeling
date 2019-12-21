@@ -40,5 +40,4 @@ def timecourse(sim):
         if i==6:
             plt.ylabel('Cdk1 Inhibition')
     
-    plt.show()
-    #plt.savefig('mitotic_switch.png',bbox_inches='tight')
+    plt.savefig('mitotic_switch.png',bbox_inches='tight')

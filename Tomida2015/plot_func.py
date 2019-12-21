@@ -35,4 +35,4 @@ def timecourse(sim):
     fig.text(0.5, 0.42, r'$k_8$ = 0.008', ha='center')
     fig.text(0.5, 0.22, r'$k_8$ = 0.004', ha='center')
 
-    plt.show()
+    plt.savefig('p38_activity.png',bbox_inches='tight')

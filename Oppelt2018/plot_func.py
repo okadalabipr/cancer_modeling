@@ -27,4 +27,4 @@ def timecourse(sim):
     fig.text(0.5, 0.05, 'time [min]', ha='center')
     fig.text(0.0, 0.5, 'concentration [a.u.]', va='center', rotation='vertical')
 
-    plt.show()
+    plt.savefig('nuclear_IkBa_NFkB.png',bbox_inches='tight')

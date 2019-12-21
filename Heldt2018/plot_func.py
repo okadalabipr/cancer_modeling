@@ -19,4 +19,4 @@ def timecourse(sim):
     plt.yticks([0,1,2])
     plt.legend(loc='upper left',frameon=False,fontsize=18)
 
-    plt.show()
+    plt.savefig('CycA_CycE_aRC_p21level.png',bbox_inches='tight')

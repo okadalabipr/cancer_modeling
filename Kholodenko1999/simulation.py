@@ -27,7 +27,7 @@ class Simulation(object):
             pass
         elif i==1: # 2nM
             y0[V.EGF] = 68.
-        elif i==2: # Absence of the PLCγ P translocation step
+        elif i==2: # Absence of the PLCγP translocation step
             y0[V.EGF] = 680.
             x[C.k25f] = 0.
             x[C.k25b] = 0.

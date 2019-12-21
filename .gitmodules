@@ -13,30 +13,3 @@
 [submodule "Inoue2016"]
 	path = Inoue2016
 	url = https://github.com/okadalabipr/Inoue2016
-[submodule "Oppelt2018"]
-	path = Oppelt2018
-	url = https://github.com/okadalabipr/Oppelt2018
-[submodule "Kholodenko1999"]
-	path = Kholodenko1999
-	url = https://github.com/okadalabipr/Kholodenko1999
-[submodule "Heldt2018"]
-	path = Heldt2018
-	url = https://github.com/okadalabipr/Heldt2018
-[submodule "Barr2016"]
-	path = Barr2016
-	url = https://github.com/okadalabipr/Barr2016
-[submodule "Tomida2015"]
-	path = Tomida2015
-	url = https://github.com/okadalabipr/Tomida2015
-[submodule "Yang2018"]
-	path = Yang2018
-	url = https://github.com/okadalabipr/Yang2018
-[submodule "Lipniacki2004"]
-	path = Lipniacki2004
-	url = https://github.com/okadalabipr/Lipniacki2004
-[submodule "Zi2011"]
-	path = Zi2011
-	url = https://github.com/okadalabipr/Zi2011
-[submodule "Raia2011"]
-	path = Raia2011
-	url = https://github.com/okadalabipr/Raia2011

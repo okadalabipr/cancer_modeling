@@ -26,7 +26,7 @@ class Simulation(object):
     x = f_params()
     y0 = initial_values()
 
-
+    # Cell line H322M
     for i in range(conditions):
         if i==0: 
             y0[V.dose_EGF] = 0

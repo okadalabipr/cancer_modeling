@@ -3,26 +3,17 @@ from .name2idx import parameters as C
 from .name2idx import variables as V
 
 
-def insulin(y, t):
-    if t < 2400:
-        """steady state
-        """
-        return 0.01
-    else:
-        return y[V.Ins]
-
-
 def diffeq(y,t,*x):
     re = [0]*25
     re[1] = x[C.k1_synthesis] * (y[V.pro_IRcom] - y[V.IRcom])
-    re[2] = x[C.k1_InsIRcom] * insulin(y, t) * y[V.IRcom] - x[C.k2_InsIRcom] * y[V.p1IRcom]
+    re[2] = x[C.k1_InsIRcom] * y[V.Ins] * y[V.IRcom] - x[C.k2_InsIRcom] * y[V.p1IRcom]
     re[3] = x[C.k1_p1IRcomDeg] * y[V.p1IRcom]
     re[4] = x[C.k1_p1IRcomPhos] * y[V.pmTOR] * y[V.p1IRcom]
     re[5] = x[C.k1_p1p2IRcomdePhos] * y[V.p1p2IRcom]
     re[6] = x[C.k1_IRcomPhos] * y[V.pmTOR] * y[V.IRcom]
     re[7] = x[C.k1_p2IRcomdePhos] * y[V.p2IRcom]
     re[8] = x[C.k1_p2IRcomDeg] * y[V.p2IRcom]
-    re[9] = x[C.k1_Insp2IRcom] * insulin(y, t) * y[V.p2IRcom] - x[C.k2_Insp2IRcom] * y[V.p1p2IRcom]
+    re[9] = x[C.k1_Insp2IRcom] * y[V.Ins] * y[V.p2IRcom] - x[C.k2_Insp2IRcom] * y[V.p1p2IRcom]
     re[10] = x[C.k1_p1p2IRcomDeg] * y[V.p1p2IRcom]
     re[11] = x[C.k1_AKTPhos] * (y[V.iAKT] - y[V.pAKT]) * y[V.p1IRcom]
     re[12] = x[C.k1_pAKTdePhos] * y[V.pAKT]

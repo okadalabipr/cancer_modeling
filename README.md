@@ -6,11 +6,14 @@ The Emergent Integrated Circuit of the Cell
 Hanahan, D. & Weinberg, R. A. The hallmarks of cancer. *Cell* **100**, 57–70 (2000). https://doi.org/10.1016/S0092-8674(00)81683-9
 
 ## Models
-- ERK & AKT signaling pathway
+- ErbB signaling pathway
     - [Kholodenko1999](./Kholodenko1999)
     - [Hatakeyama2003](https://github.com/okadalabipr/Hatakeyama2003)
     - [Birtwistle2007](https://github.com/okadalabipr/Birtwistle2007)
     - [Hass2017](./Hass2017)
+
+- Insulin signaling pathway
+    - [Kubota2012](./Kubota2012)
     
 - Immediate-early gene response
     - [Nakakuki2010](https://github.com/okadalabipr/Nakakuki2010)

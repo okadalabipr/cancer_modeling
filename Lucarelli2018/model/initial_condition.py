@@ -1,7 +1,7 @@
 from .name2idx import variables as V
 
-from model.name2idx import parameters as C
-from model.param_const import f_params
+from .name2idx import parameters as C
+from .param_const import f_params
 
 def initial_values():
     y0 = [0]*V.len_f_vars

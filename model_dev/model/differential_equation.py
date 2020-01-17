@@ -1,4 +1,3 @@
-import numpy as np
 from .name2idx import parameters as C
 from .name2idx import variables as V
 

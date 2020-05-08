@@ -1,14 +1,17 @@
-var_names = [\
+var_names = [
     'MPF',
     'Cdc25',
     'Wee1',
     'Gwl',
     'ENSAPt',
     'PP2',
-    
-    #
-    'len_f_vars'\
 ]
 
-for idx,name in enumerate(var_names):
-    exec('%s=%d'%(name,idx))
+for idx, name in enumerate(var_names):
+    exec(
+        '{} = {:d}'.format(
+            name, idx
+        )
+    )
+
+len_f_vars = len(var_names)

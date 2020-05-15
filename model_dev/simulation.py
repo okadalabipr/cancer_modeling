@@ -1,7 +1,7 @@
 import numpy as np
 from scipy.integrate import odeint
 
-from model.set_model import *
+from model import *
 
 
 class Simulation(object):

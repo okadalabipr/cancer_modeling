@@ -1,5 +1,4 @@
-param_names = [\
-
+param_names = [
     'AKT_activation_pEGFR',
     'AKT_activation_pErbB12',
     'AKT_activation_pErbB13',
@@ -468,9 +467,13 @@ param_names = [\
 	'scale_tIGF1R_CelllineBxPc3',
 	'scale_tIGF1R_CelllineH322M',
 	'scale_tIGF1R_CelllineIGROV1',
-
-    'len_f_params'\
 ]
 
-for idx,name in enumerate(param_names):
-    exec('%s=%d'%(name,idx))
+for idx, name in enumerate(param_names):
+    exec(
+		'{} = {:d}'.format(
+			name, idx
+		)
+	)
+
+len_f_params = len(param_names)

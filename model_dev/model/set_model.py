@@ -2,7 +2,7 @@ from .name2idx import C, V
 
 def diffeq(y, t, *x):
 
-    dydt = [0] * V.len_f_vars
+    dydt = [0] * V.NUM
     """
     This file contains the differential equations that instruct the model how to
     change concentrations of reactants over the time course of the simulation.
@@ -10,9 +10,9 @@ def diffeq(y, t, *x):
     return dydt
 
 
-def f_params():
+def param_values():
 
-    x = [0] * C.len_f_params
+    x = [0] * C.NUM
     """
     This file contains the parameters used in the differential equations.
     """
@@ -22,7 +22,7 @@ def f_params():
 
 def initial_values():
 
-    y0 = [0] * V.len_f_vars
+    y0 = [0] * V.NUM
     """
     This is where you define non-zero initial concentrations.
     """

@@ -1,14 +1,14 @@
-var_names = [\
+NAMES = [\
     """
     This is where you define the parameter/variable names of your model.
     """
 ]
 
-for idx, name in enumerate(var_names):
+for idx, name in enumerate(NAMES):
     exec(
         '{} = {:d}'.format(
             name, idx
         )
     )
 
-len_f_vars = len(var_names)
+NUM = len(NAMES)

@@ -1,7 +1,8 @@
 import numpy as np
 from scipy.integrate import odeint
 
-from model import *
+from .name2idx import C, V
+from .set_model import diffeq, param_values, initial_values
 
 
 class Simulation(object):

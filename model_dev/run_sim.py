@@ -3,7 +3,7 @@ This is the file that is used to actually run the simulations for your model and
 plot the results.
 """
 
-from simulation import Simulation
+from model import Simulation
 import plot_func
 
 def run_simulation():

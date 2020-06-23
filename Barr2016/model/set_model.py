@@ -2,7 +2,7 @@ from .name2idx import C, V
 
 def diffeq(y, t, *x):
 
-    dydt = [0] * V.len_f_vars
+    dydt = [0] * V.NUM
 
     CycE = y[V.CycET] - y[V.CycEp27]
     CycA = y[V.CycAT] - y[V.CycAp27]
@@ -34,9 +34,9 @@ def diffeq(y, t, *x):
     return dydt
 
 
-def f_params():
+def param_values():
     
-    x = [0] * C.len_f_params
+    x = [0] * C.NUM
 
     ## CYCE SYNTHESISx[C.DEGRADATION AND P27 BINDING/DISSOCIATION:
     x[C.kscyce]=0.003
@@ -78,7 +78,7 @@ def f_params():
 
 def initial_values():
 
-    y0 = [0] * V.len_f_vars
+    y0 = [0] * V.NUM
 
     y0[V.Cdh1dp] = 1.
     y0[V.Cdh1] = 1.

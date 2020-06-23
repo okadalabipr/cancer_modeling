@@ -1,6 +1,6 @@
 from .name2idx import C, V
 
-def heaviside(x):
+def _heaviside(x):
 
     return 1 * (x > 0)
 
@@ -37,10 +37,10 @@ def diffeq(y, t, *x):
     rDeP53 = x[C.kDeP53] / (x[C.jP53] + y[V.Dam])
     rReDam = x[C.kReDam] + x[C.kReDamP53]*y[V.P53] / (x[C.jDam] + y[V.Dam])
 
-    rDsRc = heaviside(y[V.Dna]-1)
+    rDsRc = _heaviside(y[V.Dna]-1)
 
     ### MODEL STATES
-    dydt = [0] * V.len_f_vars
+    dydt = [0] * V.NUM
 
     dydt[V.uRb]  = - rPhRb*y[V.uRb] + x[C.kDpRb]*pRb
     dydt[V.tE2f] = rSyE2f - x[C.kDeE2f]*y[V.tE2f]
@@ -75,9 +75,9 @@ def diffeq(y, t, *x):
     return dydt
 
 
-def f_params():
+def param_values():
 
-    x = [0] * C.len_f_params
+    x = [0] * C.NUM
 
     x[C.Bg] = 0.05
     x[C.kSyE2f]=0.03
@@ -139,7 +139,7 @@ def f_params():
 
 def initial_values():
 
-    y0 = [0] * V.len_f_vars
+    y0 = [0] * V.NUM
 
     y0[V.tP21] = 0.6
     y0[V.aPcna] = 0.5

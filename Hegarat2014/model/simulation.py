@@ -1,7 +1,8 @@
 import numpy as np
 from scipy.integrate import odeint
 
-from model.set_model import *
+from .name2idx import C, V
+from .set_model import diffeq, param_values, initial_values
 
 
 class Simulation(object):
@@ -16,7 +17,7 @@ class Simulation(object):
     Y15 = np.empty((len(t),condition))
     B55 = np.empty((len(t),condition))
     
-    x = f_params()
+    x = param_values()
     y0 = initial_values()
     
     for i in range(condition):

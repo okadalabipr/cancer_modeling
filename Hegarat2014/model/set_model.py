@@ -2,7 +2,7 @@ from .name2idx import C, V
 
 def diffeq(y,t,*x):
 
-    dydt = [0] * V.len_f_vars
+    dydt = [0] * V.NUM
     
     MPFa = y[V.MPF]/(1+x[C.RO])
     PP2a = y[V.PP2]/(1+x[C.OA])
@@ -22,9 +22,9 @@ def diffeq(y,t,*x):
     return dydt
 
 
-def f_params():
+def param_values():
 
-    x = [0] * C.len_f_params
+    x = [0] * C.NUM
 
     x[C.CycT] = 1
     x[C.Va25] = 2
@@ -56,7 +56,7 @@ def f_params():
 
 def initial_values():
 
-    y0 = [0] * V.len_f_vars
+    y0 = [0] * V.NUM
     
     y0[V.MPF] = 0
     y0[V.Cdc25] = 0 

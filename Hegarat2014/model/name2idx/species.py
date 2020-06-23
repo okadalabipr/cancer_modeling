@@ -1,4 +1,4 @@
-var_names = [
+NAMES = [
     'MPF',
     'Cdc25',
     'Wee1',
@@ -7,11 +7,11 @@ var_names = [
     'PP2',
 ]
 
-for idx, name in enumerate(var_names):
+for idx, name in enumerate(NAMES):
     exec(
         '{} = {:d}'.format(
             name, idx
         )
     )
 
-len_f_vars = len(var_names)
+NUM = len(NAMES)

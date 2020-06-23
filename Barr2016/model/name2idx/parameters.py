@@ -1,4 +1,4 @@
-param_names = [
+NAMES = [
     ## CYCE SYNTHESISDEGRADATION AND P27 BINDING/DISSOCIATION:
     'kscyce',
     'kdcyce',
@@ -35,11 +35,11 @@ param_names = [
     'Inhibitor',
 ]
 
-for idx, name in enumerate(param_names):
+for idx, name in enumerate(NAMES):
     exec(
         '{} = {:d}'.format(
             name, idx
         )
     )
 
-len_f_params = len(param_names)
+NUM = len(NAMES)

@@ -1,10 +1,11 @@
 import numpy as np
 from scipy.integrate import odeint
 
-from model.set_model import *
+from .name2idx import C, V
+from model.set_model import diffeq, param_values, initial_values
 
 class Simulation(object):
-    x = f_params()
+    x = param_values()
     y0 = initial_values()
 
     tspan = range(901)

@@ -1,4 +1,4 @@
-var_names = [\
+NAMES = [
     'Ins',
     'pro_IRcom',
     'IRcom',
@@ -18,9 +18,13 @@ var_names = [\
     'iFoxO1',
     'pFoxO1',
     'G6Pase',
-    #
-    'len_f_vars'\
 ]
 
-for idx,name in enumerate(var_names):
-    exec('%s=%d'%(name,idx))
+for idx, name in enumerate(NAMES):
+    exec(
+        '{} = {:d}'.format(
+            name, idx
+        )
+    )
+
+NUM = len(NAMES)

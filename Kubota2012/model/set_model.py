@@ -1,10 +1,11 @@
 # Table S6: List of differential equations of the reduced model
-from .name2idx import parameters as C
-from .name2idx import variables as V
+from .name2idx import C, V
 
 
-def diffeq(y,t,*x):
-    re = [0]*25
+def diffeq(y, t, *x):
+
+    re = [0] * 25
+
     re[1] = x[C.k1_synthesis] * (y[V.pro_IRcom] - y[V.IRcom])
     re[2] = x[C.k1_InsIRcom] * y[V.Ins] * y[V.IRcom] - x[C.k2_InsIRcom] * y[V.p1IRcom]
     re[3] = x[C.k1_p1IRcomDeg] * y[V.p1IRcom]
@@ -30,7 +31,7 @@ def diffeq(y,t,*x):
     re[23] = x[C.k1_G6PaseSynthesis] * (y[V.iFoxO1] - y[V.pFoxO1])
     re[24] = x[C.k1_G6PaseDeg] * y[V.G6Pase]
     
-    dydt = [0]*V.len_f_vars
+    dydt = [0] * V.NUM
     
     dydt[V.IRcom] = re[1] - re[2] - re[6] + re[7]
     dydt[V.p1IRcom] = re[2] - re[3] -re[4] + re[5]
@@ -45,3 +46,63 @@ def diffeq(y,t,*x):
     dydt[V.G6Pase] = re[23] - re[24]
 
     return dydt
+
+
+def param_values():
+
+    x = [0] * C.NUM
+
+    x[C.k1_synthesis] = 0.04780
+    x[C.k1_InsIRcom] = 7.78161
+    x[C.k2_InsIRcom] = 1.61148
+    x[C.k1_p1IRcomDeg] = 0.00792
+    x[C.k1_p1IRcomPhos] = 0.00004
+    x[C.k1_p1p2IRcomdePhos] = 0.28443
+    x[C.k1_IRcomPhos] = 9.93311
+    x[C.k1_p2IRcomdePhos] = 0.00001
+    x[C.k1_p2IRcomDeg] = 0.00001
+    x[C.k1_Insp2IRcom] = 0.36303
+    x[C.k2_Insp2IRcom] = 0.40813
+    x[C.k1_p1p2IRcomDeg] = 0.09490
+    x[C.k1_AKTPhos] = 0.00920
+    x[C.k1_pAKTdePhos] = 7.70619
+    x[C.k1_mTORPhos] = 0.41968
+    x[C.k1_pmTORdePhos] = 0.12433
+    x[C.k1_S6KPhos] = 0.00752
+    x[C.k1_pS6KdePhos] = 1.95498
+    x[C.k1_XPhos] = 0.00105
+    x[C.k1_pXdePhos] = 0.00146
+    x[C.k1_GSK3BPhos] = 2.97538
+    x[C.k1_pGSK3BdePhos] = 0.92460
+    x[C.k1_FoxO1Phos] = 4.59698
+    x[C.k1_pFoxO1dePhos] = 0.15172
+    x[C.k1_G6PaseSynthesis] = 4.86146
+    x[C.k1_G6PaseDeg] = 0.05496
+
+    return x
+
+
+def initial_values():
+
+    y0 = [0] * V.NUM
+
+    y0[V.pro_IRcom] = 46.22225
+    y0[V.IRcom] = 46.22225
+    y0[V.p1IRcom] = 0
+    y0[V.p2IRcom] = 0
+    y0[V.p1p2IRcom] = 0
+    y0[V.iAKT] = 4.33812
+    y0[V.pAKT] = 0
+    y0[V.imTOR] = 0.09592
+    y0[V.pmTOR] = 0
+    y0[V.iX] = 14.99133
+    y0[V.pX] = 0
+    y0[V.iS6K] = 2.77699
+    y0[V.pS6K] = 0
+    y0[V.iGSK3B] = 10.56415
+    y0[V.pGSK3B] = 0
+    y0[V.iFoxO1] = 0.43571
+    y0[V.pFoxO1] = 0
+    y0[V.G6Pase] = 38.54029
+
+    return y0

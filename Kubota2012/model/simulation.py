@@ -1,16 +1,13 @@
 import numpy as np
 from scipy.integrate import odeint
 
-from model.name2idx import parameters as C
-from model.name2idx import variables as V
-from model.param_const import f_params
-from model.initial_condition import initial_values
-from model.differential_equation import diffeq
+from .name2idx import C, V
+from .set_model import diffeq, param_values, initial_values
 
 class Simulation(object):
-    
-    def get_steady_state():
-        x = f_params()
+
+    def _get_steady_state():
+        x = param_values()
         y0 = initial_values()
         
         ss_time = range(2401)  # 2400 min
@@ -24,17 +21,17 @@ class Simulation(object):
     tspan = range(481)
     t = np.array(tspan)
     
-    condition = 5
+    conditions = 5
 
-    pAKT   = np.empty((len(t), condition))
-    pS6K   = np.empty((len(t), condition))
-    pGSK3B = np.empty((len(t), condition))
-    G6Pase = np.empty((len(t), condition))
+    pAKT   = np.empty((len(t), conditions))
+    pS6K   = np.empty((len(t), conditions))
+    pGSK3B = np.empty((len(t), conditions))
+    G6Pase = np.empty((len(t), conditions))
 
-    x = f_params()
-    y0 = get_steady_state()
+    x = param_values()
+    y0 = _get_steady_state()
     
-    for i in range(condition):
+    for i in range(conditions):
         if i == 0:
             y0[V.Ins] = 0.01
         elif i == 1:

@@ -1,4 +1,4 @@
-param_names = [\
+NAMES = [
     'k1_synthesis',
     'k1_InsIRcom',
     'k2_InsIRcom',
@@ -25,9 +25,13 @@ param_names = [\
     'k1_pFoxO1dePhos',
     'k1_G6PaseSynthesis',
     'k1_G6PaseDeg',
-    #
-    'len_f_params'\
 ]
 
-for idx,name in enumerate(param_names):
-    exec('%s=%d'%(name,idx))
+for idx, name in enumerate(NAMES):
+    exec(
+        '{} = {:d}'.format(
+            name, idx
+        )
+    )
+
+NUM = len(NAMES)

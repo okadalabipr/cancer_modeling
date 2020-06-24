@@ -1,5 +1,4 @@
-param_names = [\
-
+NAMES = [
 	'Rec_act',
 	'S2tot',
 	'S3tot',
@@ -123,9 +122,13 @@ param_names = [\
     'gene_inh1',
     'gene_inh2',
     'gene_inh3',
-
-    'len_f_params'\
 ]
 
-for idx,name in enumerate(param_names):
-    exec('%s=%d'%(name,idx))
+for idx, name in enumerate(NAMES):
+    exec(
+        '{} = {:d}'.format(
+            name, idx
+        )
+    )
+
+NUM = len(NAMES)

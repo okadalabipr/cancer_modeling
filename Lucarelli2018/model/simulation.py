@@ -1,11 +1,8 @@
 import numpy as np
 from scipy.integrate import odeint
 
-from model.name2idx import parameters as C
-from model.name2idx import variables as V
-from model.param_const import f_params
-from model.initial_condition import initial_values
-from model.differential_equation import diffeq
+from .name2idx import C, V
+from .set_model import diffeq, param_values, initial_values
 
 
 class Simulation(object):
@@ -13,9 +10,14 @@ class Simulation(object):
     t_end = 600
     h = 10000
     t = np.linspace(t_start, t_end, h)
-    conditions = 12
+    conditions = [
+        'Ski', 'Skil', 'Dnmt3a',
+        'Sox4', 'Jun', 'Smad7',
+        'Klf10', 'Bmp4', 'Cxcl15',
+        'Dusp5', 'Tgfa', 'Pdk4',
+    ]
 
-    x = f_params()
+    x = param_values()
     y0 = initial_values()
 
     for j in range(4):
@@ -36,8 +38,8 @@ class Simulation(object):
             y0[V.S3] = x[C.S3tot]
             y0[V.S4] = 3*x[C.S3tot]
 
-        for i in range(conditions):
-            if i == 0:
+        for _, gene_name in enumerate(conditions):
+            if gene_name == 'Ski':
                 x[C.gene_turn] = x[C.Ski_turn]
                 x[C.gene_act1] = x[C.Ski_act1]
                 x[C.gene_act2] = x[C.Ski_act2]
@@ -56,7 +58,7 @@ class Simulation(object):
                 elif j == 3:
                     Ski_Smad4OE = np.log2(Y[:, V.gene])
 
-            if i == 1:
+            elif gene_name == 'Skil':
                 x[C.gene_turn] = x[C.Skil_turn]
                 x[C.gene_act1] = x[C.Skil_act1]
                 x[C.gene_act2] = x[C.Skil_act2]
@@ -75,7 +77,7 @@ class Simulation(object):
                 elif j == 3:
                     Skil_Smad4OE = np.log2(Y[:, V.gene])
 
-            if i == 2:
+            elif gene_name == 'Dnmt3a':
                 x[C.gene_turn] = x[C.Dnmt3a_turn]
                 x[C.gene_act1] = x[C.Dnmt3a_act1]
                 x[C.gene_act2] = x[C.Dnmt3a_act2]
@@ -94,7 +96,7 @@ class Simulation(object):
                 elif j == 3:
                     Dnmt3a_Smad4OE = np.log2(Y[:, V.gene])
 
-            if i == 3:
+            elif gene_name == 'Sox4':
                 x[C.gene_turn] = x[C.Sox4_turn]
                 x[C.gene_act1] = x[C.Sox4_act1]
                 x[C.gene_act2] = x[C.Sox4_act2]
@@ -113,7 +115,7 @@ class Simulation(object):
                 elif j == 3:
                     Sox4_Smad4OE = np.log2(Y[:, V.gene])
 
-            if i == 4:
+            elif gene_name == 'Jun':
                 x[C.gene_turn] = x[C.Jun_turn]
                 x[C.gene_act1] = x[C.Jun_act1]
                 x[C.gene_act2] = x[C.Jun_act2]
@@ -132,7 +134,7 @@ class Simulation(object):
                 elif j == 3:
                     Jun_Smad4OE = np.log2(Y[:, V.gene])
 
-            if i == 5:
+            elif gene_name == 'Smad7':
                 x[C.gene_turn] = x[C.Smad7_turn]
                 x[C.gene_act1] = x[C.Smad7_act1]
                 x[C.gene_act2] = x[C.Smad7_act2]
@@ -151,7 +153,7 @@ class Simulation(object):
                 elif j == 3:
                     Smad7_Smad4OE = np.log2(Y[:, V.gene])
 
-            if i == 6:
+            elif gene_name == 'Klf10':
                 x[C.gene_turn] = x[C.Klf10_turn]
                 x[C.gene_act1] = x[C.Klf10_act1]
                 x[C.gene_act2] = x[C.Klf10_act2]
@@ -170,7 +172,7 @@ class Simulation(object):
                 elif j == 3:
                     Klf10_Smad4OE = np.log2(Y[:, V.gene])
 
-            if i == 7:
+            elif gene_name == 'Bmp4':
                 x[C.gene_turn] = x[C.Bmp4_turn]
                 x[C.gene_act1] = x[C.Bmp4_act1]
                 x[C.gene_act2] = x[C.Bmp4_act2]
@@ -189,7 +191,7 @@ class Simulation(object):
                 elif j == 3:
                     Bmp4_Smad4OE = np.log2(Y[:, V.gene])
 
-            if i == 8:
+            elif gene_name == 'Cxcl15':
                 x[C.gene_turn] = x[C.Cxcl15_turn]
                 x[C.gene_act1] = x[C.Cxcl15_act1]
                 x[C.gene_act2] = x[C.Cxcl15_act2]
@@ -208,7 +210,7 @@ class Simulation(object):
                 elif j == 3:
                     Cxcl15_Smad4OE = np.log2(Y[:, V.gene])
 
-            if i == 9:
+            elif gene_name == 'Dusp5':
                 x[C.gene_turn] = x[C.Dusp5_turn]
                 x[C.gene_act1] = x[C.Dusp5_act1]
                 x[C.gene_act2] = x[C.Dusp5_act2]
@@ -227,7 +229,7 @@ class Simulation(object):
                 elif j == 3:
                     Dusp5_Smad4OE = np.log2(Y[:, V.gene])
 
-            if i == 10:
+            elif gene_name == 'Tgfa':
                 x[C.gene_turn] = x[C.Tgfa_turn]
                 x[C.gene_act1] = x[C.Tgfa_act1]
                 x[C.gene_act2] = x[C.Tgfa_act2]
@@ -246,7 +248,7 @@ class Simulation(object):
                 elif j == 3:
                     Tgfa_Smad4OE = np.log2(Y[:, V.gene])
 
-            if i == 11:
+            elif gene_name == 'Pdk4':
                 x[C.gene_turn] = x[C.Pdk4_turn]
                 x[C.gene_act1] = x[C.Pdk4_act1]
                 x[C.gene_act2] = x[C.Pdk4_act2]

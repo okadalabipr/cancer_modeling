@@ -1,5 +1,4 @@
-var_names = [\
-    
+NAMES = [
     'TGFb',
     'Rec',
     'TGFb_pRec',
@@ -21,9 +20,13 @@ var_names = [\
     'ppS3_S4_S4',
     'ppS2_S4_S4',
     'gene',
-
-    'len_f_vars'\
 ]
 
-for idx,name in enumerate(var_names):
-    exec('%s=%d'%(name,idx))
+for idx, name in enumerate(NAMES):
+    exec(
+        '{} = {:d}'.format(
+            name, idx
+        )
+    )
+
+NUM = len(NAMES)

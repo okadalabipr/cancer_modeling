@@ -10,7 +10,7 @@ def timecourse(sim):
 
     plt.subplots_adjust(wspace=0.5, hspace=0.3)
 
-    for i in range(sim.condition):
+    for i in range(sim.conditions):
         plt.subplot(4,1,i+1)
 
         plt.gca().spines['right'].set_visible(False)

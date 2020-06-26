@@ -1,4 +1,4 @@
-var_names = [\
+NAMES = [\
     'TNFR',
     'Ikk',
     'pIkk',
@@ -20,9 +20,13 @@ var_names = [\
     'RnaA20_1',
     'RnaA20',
     'A20',
-    #
-    'len_f_vars'\
 ]
 
-for idx,name in enumerate(var_names):
-    exec('%s=%d'%(name,idx))
+for idx, name in enumerate(NAMES):
+    exec(
+        '{} = {:d}'.format(
+            name, idx
+        )
+    )
+
+NUM = len(NAMES)

@@ -1,4 +1,4 @@
-param_names = [\
+NAMES = [\
     'uptake',
     'TNF',
     'trigger_iIkk',
@@ -29,9 +29,13 @@ param_names = [\
     'build_RnaA20',
     'build_A20',
     'shuttle_RnaA20',
-    #
-    'len_f_params'\
 ]
 
-for idx,name in enumerate(param_names):
-    exec('%s=%d'%(name,idx))
+for idx, name in enumerate(NAMES):
+    exec(
+        '{} = {:d}'.format(
+            name, idx
+        )
+    )
+
+NUM = len(NAMES)

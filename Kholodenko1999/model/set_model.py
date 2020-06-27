@@ -30,7 +30,7 @@ def diffeq(y, t, *x):
     v[24] = x[C.k24f]*y[V.R_ShP]*y[V.G_S] - x[C.k24b]*y[V.R_Sh_G_S]
     v[25] = x[C.k25f]*y[V.PLCgP] - x[C.k25b]*y[V.PLCgP_I]
 
-    dydt = [0] * V.len_f_vars
+    dydt = [0] * V.NUM
 
     dydt[V.EGF]      = -v[1]
     dydt[V.R]        = -v[1]
@@ -59,9 +59,9 @@ def diffeq(y, t, *x):
     return dydt
 
 
-def f_params():
+def param_values():
 
-    x = [0] * C.len_f_params
+    x = [0] * C.NUM
 
     x[C.k1f] = 0.003
     x[C.k1b] = 0.06
@@ -119,7 +119,7 @@ def f_params():
 
 def initial_values():
     
-    y0 = [0] * V.len_f_vars
+    y0 = [0] * V.NUM
 
     y0[V.EGF] = 680
     y0[V.R] = 100

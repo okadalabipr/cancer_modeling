@@ -1,4 +1,4 @@
-param_names = [
+NAMES = [
     'k1f',
     'k1b',
     'k2f',
@@ -51,11 +51,11 @@ param_names = [
     'k25b',
 ]
 
-for idx, name in enumerate(param_names):
+for idx, name in enumerate(NAMES):
     exec(
 		'{} = {:d}'.format(
 			name,idx
 		)
 	)
 
-len_f_params = len(param_names)
+NUM = len(NAMES)

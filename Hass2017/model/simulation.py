@@ -1,7 +1,8 @@
 import numpy as np
 from scipy.integrate import odeint
 
-from model import *
+from .name2idx import C, V
+from .set_model import diffeq, param_values, initial_values
 
 class Simulation(object):
     t_start = 0
@@ -18,7 +19,7 @@ class Simulation(object):
     pAKT_au = np.empty((len(t),conditions))
     pS6_au = np.empty((len(t),conditions))
 
-    x = f_params()
+    x = param_values()
     y0 = initial_values()
 
     # Cell line H322M

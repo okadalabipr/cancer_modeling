@@ -1,4 +1,4 @@
-param_names = [
+NAMES = [
     'AKT_activation_pEGFR',
     'AKT_activation_pErbB12',
     'AKT_activation_pErbB13',
@@ -469,11 +469,11 @@ param_names = [
 	'scale_tIGF1R_CelllineIGROV1',
 ]
 
-for idx, name in enumerate(param_names):
+for idx, name in enumerate(NAMES):
     exec(
 		'{} = {:d}'.format(
 			name, idx
 		)
 	)
 
-len_f_params = len(param_names)
+NUM = len(NAMES)

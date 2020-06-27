@@ -1,7 +1,9 @@
 import numpy as np
 from scipy.integrate import odeint
 
-from model import *
+from .name2idx import C, V
+from .set_model import diffeq, param_values, initial_values
+
 
 class Simulation(object):
     t = range(121)
@@ -19,7 +21,7 @@ class Simulation(object):
     ShGS = np.empty((len(t), len(conditions)))
     PLCg = np.empty((len(t), len(conditions)))
 
-    x = f_params()
+    x = param_values()
     y0 = initial_values()
 
     for i, condition in enumerate(conditions):

@@ -1,4 +1,4 @@
-var_naems = [\
+NAMES = [
     'IKKn',
     'IKKa',
     'IKKi',
@@ -14,9 +14,13 @@ var_naems = [\
     'IkBaNFkB',
     'IkBanNFkBn',
     'cgent',
-    #
-    'len_f_vars'\
 ]
 
-for idx,name in enumerate(var_naems):
-    exec('%s=%d'%(name,idx))
+for idx, name in enumerate(NAMES):
+    exec(
+        '{} = {:d}'.format(
+            name, idx
+        )
+    )
+
+NUM = len(NAMES)

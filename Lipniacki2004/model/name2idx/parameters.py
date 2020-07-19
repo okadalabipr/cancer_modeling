@@ -1,4 +1,4 @@
-param_names = [\
+NAMES = [
     'TR',   # TNFα concentration
     'a1',   # IkBa2NFkB association
     'a2',   # IKKa–IkBa association
@@ -29,9 +29,13 @@ param_names = [\
     'c1c',  # cgen inducible mRNA synthesis
     'c2c',  # cgen constitutive mRNA synthesis
     'c3c',  # cgen mRNA degradation
-    # 
-    'len_f_params'\
 ]
 
-for idx,name in enumerate(param_names):
-    exec('%s=%d'%(name,idx))
+for idx, name in enumerate(NAMES):
+    exec(
+        '{} = {:d}'.format(
+            name, idx
+        )
+    )
+
+NUM = len(NAMES)

@@ -1,11 +1,8 @@
 import numpy as np
 from scipy.integrate import odeint
 
-from model.name2idx import parameters as C
-from model.name2idx import variables as V
-from model.param_const import f_params
-from model.initial_condition import initial_values
-from model.differential_equation import diffeq
+from .name2idx import C, V
+from .set_model import diffeq, param_values, initial_values
 
 
 class Simulation(object):
@@ -16,7 +13,7 @@ class Simulation(object):
     
     t = np.arange(3600*7+1)/3600.
     
-    x = f_params()
+    x = param_values()
     y0 = initial_values()
     
     # t < 0

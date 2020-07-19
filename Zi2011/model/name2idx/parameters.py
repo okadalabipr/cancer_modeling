@@ -1,4 +1,4 @@
-param_names = [\
+NAMES = [
     # Summary of the derived parameter values based on published models and experimental data
     'kdeg_T1R',
     'kdeg_T2R',
@@ -23,9 +23,13 @@ param_names = [\
     'kon_Smads',
     'kon_ns',
     'KD_ns',
-    ##
-    'len_f_params'\
 ]
 
-for idx,name in enumerate(param_names):
-    exec('%s=%d'%(name,idx))
+for idx, name in enumerate(NAMES):
+    exec(
+        '{} = {:d}'.format(
+            name, idx
+        )
+    )
+
+NUM = len(NAMES)

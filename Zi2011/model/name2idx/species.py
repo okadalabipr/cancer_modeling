@@ -1,4 +1,4 @@
-var_names = [\
+NAMES = [
     'TGF_beta_ex', #x1
     'T1R_surf', #x2
     'T1R_endo', #x3
@@ -18,9 +18,13 @@ var_names = [\
     'PSmad2_Smad4_n', #x17
     'TGF_beta_endo', #x18
     'TGF_beta_ns', #x19
-    #
-    'len_f_vars'\
 ]
 
-for idx,name in enumerate(var_names):
-    exec('%s=%d'%(name,idx))
+for idx, name in enumerate(NAMES):
+    exec(
+        '{} = {:d}'.format(
+            name, idx
+        )
+    )
+
+NUM = len(NAMES)

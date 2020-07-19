@@ -1,5 +1,5 @@
 module C
-const param_names = [
+const NAMES = [
     "kp0"   # Basal production rate of p53
     "km0"   # Basal production rate of Mdm2
     "kw0"   # Basal production rate of Wip1
@@ -29,12 +29,12 @@ const param_names = [
     "ATMt"  # Total amount of ATM
     #
     "Eto"   # Etoposide
-];
+]
 
-for (idx,name) in enumerate(param_names)
-    eval(Meta.parse("const $name = $idx"));
+for (idx,name) in enumerate(NAMES)
+    eval(Meta.parse("const $name = $idx"))
 end
 
-const len_f_params = length(param_names);
+const NUM = length(NAMES)
 
 end  # module

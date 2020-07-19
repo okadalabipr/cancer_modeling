@@ -1,18 +1,15 @@
 module Yang2018
-using PyPlot;
+using PyPlot
 
 export runSim
 
-include("model/model.jl");
-using .Model;
+include("model/simulation.jl")
+using .Sim
 
-include("simulation.jl");
-using .Sim;
-
-include("plotFunc.jl");
+include("plotFunc.jl")
 
 function runSim()
-    plotFunc_timecourse(Sim);
+    plotFunc_timecourse(Sim)
 end
 
 end  # module

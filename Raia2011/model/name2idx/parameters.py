@@ -1,5 +1,4 @@
-param_names = [\
-
+NAMES = [
     'Kon_IL13Rec',
     'Rec_phosphorylation',
     'pRec_intern',
@@ -17,9 +16,13 @@ param_names = [\
     'SOCS3_accumulation',
     'SOCS3_degradation',
     'CD274mRNA_production',
-    #
-    'len_f_params'\
 ]
 
-for idx,name in enumerate(param_names):
-    exec('%s=%d'%(name,idx))
+for idx, name in enumerate(NAMES):
+    exec(
+        '{} = {:d}'.format(
+            name, idx
+        )
+    )
+
+NUM = len(NAMES)

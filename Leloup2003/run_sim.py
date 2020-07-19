@@ -1,4 +1,4 @@
-from simulation import Simulation
+from model.simulation import Simulation
 import plot_func
 
 def run_simulation():
